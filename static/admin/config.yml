@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'menu'
+    label: 'Menu'
+    format: 'json'
+    folder: 'assets/content/menu'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', fields: 
+        - { label: 'Tamaño', name: 'tamano', widget: 'string' }
+        - { label: 'Precio', name: 'precio', widget: 'string' }
+        }
+      - { label: 'Category', name: 'category', widget: 'select', options: 
+          - { label: "Entradas", value: "entradas" }
+          - { label: "Sopas", value: "sopas" }
+          - { label: "Arroz", value: "arroz" }
+          - { label: "Tallarín de Arroz", value: "tallarin_de_arroz" }
+          - { label: "Chop Suey", value: "chop_suey" }
+          - { label: "Chaumin", value: "chaumin" }
+          - { label: "Pollo", value: "pollo" }
+          - { label: "Cerdo", value: "cerdo" }
+          - { label: "Res", value: "res" }
+          - { label: "Camarón", value: "camaron" }
+        }
