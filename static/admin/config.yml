@@ -14,7 +14,8 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', fields: 
+      - { label: 'Title', name: 'title', widget: 'string' } 
+      - { label: 'Opciones', name: 'opciones', widget: 'list', fields:
         - { label: 'Tamaño', name: 'tamano', widget: 'string' }
         - { label: 'Precio', name: 'precio', widget: 'string' }
         }
