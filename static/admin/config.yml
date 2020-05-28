@@ -9,17 +9,22 @@ collections:
   - name: 'menu'
     label: 'Menu'
     format: 'json'
-    folder: 'assets/content'
+    folder: 'assets/content/menu'
     create: true
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' } 
-      - { label: 'Opciones', name: 'opciones', widget: 'list', fields:
-        - { label: 'Tamaño', name: 'tamano', widget: 'string' }
-        - { label: 'Precio', name: 'precio', widget: 'string' }
-        }
-      - { label: 'Category', name: 'category', widget: 'select', options: 
+      - label: 'Opciones'
+        name: 'opciones'
+        widget: 'list'
+        fields:
+          - { label: 'Tamaño', name: 'tamano', widget: 'string' }
+          - { label: 'Precio', name: 'precio', widget: 'string' }
+      - label: 'Category'
+        name: 'category'
+        widget: 'select'
+        options: 
           - { label: "Entradas", value: "entradas" }
           - { label: "Sopas", value: "sopas" }
           - { label: "Arroz", value: "arroz" }
@@ -30,4 +35,3 @@ collections:
           - { label: "Cerdo", value: "cerdo" }
           - { label: "Res", value: "res" }
           - { label: "Camarón", value: "camaron" }
-        }
