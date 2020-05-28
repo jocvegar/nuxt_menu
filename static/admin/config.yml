@@ -9,7 +9,7 @@ collections:
   - name: 'menu'
     label: 'Menu'
     format: 'json'
-    folder: 'assets/content/menu'
+    folder: 'assets/content'
     create: true
     editor:
       preview: false
