@@ -1,0 +1,14 @@
+{
+  "title": "Tacos Fritos",
+  "category": "entradas",
+  "opciones": [
+    {
+      "tamano": "6 Unidades",
+      "precio": "100"
+    },
+    {
+      "tamano": "12 Unidades",
+      "precio": "180"
+    }
+  ]
+}
