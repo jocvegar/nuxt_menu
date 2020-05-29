@@ -14,6 +14,8 @@ export const actions = {
         let menuItems = files.keys().map(key => {
             let res = files(key);
             res.slug = key.slice(2, -5)
+            console.log("key: " + key)
+            console.log("key.slice(2, -5): " + key.slice(2, -5))
             return res
         })
     await commit('setmenuItems', menuItems)       

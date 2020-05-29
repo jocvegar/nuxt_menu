@@ -1,30 +1,18 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        nuxt_menu
-      </h1>
-      <h2 class="subtitle">
-        Siu Traditional Chinese Cuisine
-      </h2>
-      <h3>
-        test
-        <span>TEST ME</span>
-      </h3>
-      <div v-for="item in menuItems" :key="item.message">
-        <li>{{item.title}}</li>
-      </div>
+    <div v-for="item in menuItems" :key="item.message">
+        <li>{{item}}</li>
+        <!-- <menu-category :category="item.category" /> -->
     </div>
-  </div>
+  </div>  
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import MenuCategory from '~/components/MenuCategory.vue'
 
 export default {
   components: {
-    Logo
+    MenuCategory
   },
   head() {
     return {
