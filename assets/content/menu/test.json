@@ -1,10 +1,14 @@
 {
-  "title": "TEST ",
-  "category": "entradas",
+  "title": "Sopa de Maiz Con Pollo",
+  "category": "sopas",
   "opciones": [
     {
-      "tamano": "test",
-      "precio": "est"
+      "tamano": "Regular",
+      "precio": "150"
+    },
+    {
+      "tamano": "Familiar",
+      "precio": "250"
     }
   ]
 }
