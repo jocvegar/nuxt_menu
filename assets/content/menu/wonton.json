@@ -1,0 +1,14 @@
+{
+  "title": "Wonton",
+  "opciones": [
+    {
+      "tamano": "12 Unidades",
+      "precio": "90"
+    },
+    {
+      "tamano": "18 Unidades",
+      "precio": "150"
+    }
+  ],
+  "category": "entradas"
+}
