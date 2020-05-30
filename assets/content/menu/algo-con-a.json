@@ -1,0 +1,14 @@
+{
+  "title": "Algo Con A",
+  "opciones": [
+    {
+      "tamano": "Regular",
+      "precio": "150"
+    },
+    {
+      "tamano": "Familiar",
+      "precio": "250"
+    }
+  ],
+  "category": "entradas"
+}
