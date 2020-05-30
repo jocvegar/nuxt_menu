@@ -5,7 +5,7 @@
                 <img src="~/static/icon.png" alt="Logo">
                 <span class= "d-none d-sm-inline-block">Restaurante</span>
                 <span class="font-weight-bold">Siu</span>
-                {{getSearchWord}}
+                <!-- {{getSearchWord}} -->
             </b-navbar-brand>
             <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle> -->
             <!-- <b-collapse id="nav-collapse" is-nav> -->
@@ -33,12 +33,11 @@
 
 <script>
 export default {
-    computed: {
-        getSearchWord() {
-            return this.$store.getters.getSearchWord
-        },
-
-    },
+    // computed: {
+    //     getSearchWord() {
+    //         return this.$store.getters.getSearchWord
+    //     },
+    // },
     methods: {
         search(e) {
             let searchTerm = this.$store.dispatch('setSearchWord', event.target.value.trim())
