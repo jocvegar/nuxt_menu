@@ -52,6 +52,12 @@ export default {
   */
   axios: {
   },
+  pwa: {
+    manifest: {
+      name: 'Restaurante Siu',
+      short_name: 'Siu',
+    }
+  },
   /*
   ** Build configuration
   */
