@@ -1,9 +1,11 @@
 <template>
   <div class="container">
-    <div v-for="item in menuItems" :key="item.message">
-        <li>{{item}}</li>
-        <!-- <menu-category :category="item.category" /> -->
-    </div>
+    <h3>{{categories}}</h3>
+    <menu-category 
+      v-for="category in categories" 
+      :key="category" 
+      :category="category"
+      :menuItems="menuItems"/>
   </div>  
 </template>
 
@@ -14,8 +16,22 @@ export default {
   components: {
     MenuCategory
   },
+  data: function () {
+    return {
+    }
+  },
   head() {
     return {
+      title: "Restaurante Siu",
+      meta: [
+        { hid: 'description', name: 'description', content: 'Restaurante Siu' }
+      ],
+      link:[
+        {
+          rel: "stylesheet", href: "https://use.fontawesome.com/releases/v5.2.0/css/all.css",
+          integrity: "sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ", crossorigin: "anonymous"
+        },
+      ],
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     };
   },
@@ -23,52 +39,13 @@ export default {
     menuItems() {
       return this.$store.state.menuItems;
     },
+    categories() {
+      return Array.from(new Set(this.$store.state.menuItems.map(x => x.category).filter(function(e){return e})))
+    }
   },
 }
 </script>
 
 <style lang="scss">
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-.container {
-  h3 {
-    color: green;
-    span {
-      background-color: tomato;
-      &:hover {
-        color:yellow;
-        cursor: wait;
-      }
-    }
-  }
-}
 </style>
