@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h3>{{categories}}</h3>
     <menu-category 
       v-for="category in categories" 
       :key="category" 
