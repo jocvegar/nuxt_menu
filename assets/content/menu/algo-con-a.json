@@ -1,14 +1,14 @@
 {
-  "title": "Algo Con A",
+  "title": "Yellow Fin",
+  "category": "entradas",
   "opciones": [
     {
       "tamano": "Regular",
-      "precio": "150"
+      "precio": "400 "
     },
     {
       "tamano": "Familiar",
-      "precio": "250"
+      "precio": "500"
     }
-  ],
-  "category": "entradas"
+  ]
 }
