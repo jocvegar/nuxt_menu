@@ -5,7 +5,7 @@
       v-for="category in categories" 
       :key="category" 
       :category="category"
-      :menuItems="menuItems"/>
+      :menuItems="filteredMenuItems"/>
   </div>  
 </template>
 
@@ -15,10 +15,6 @@ import MenuCategory from '~/components/MenuCategory.vue'
 export default {
   components: {
     MenuCategory
-  },
-  data: function () {
-    return {
-    }
   },
   head() {
     return {
@@ -36,8 +32,11 @@ export default {
     };
   },
   computed: {
-    menuItems() {
-      return this.$store.state.menuItems;
+    filteredMenuItems() {
+      let word = this.$store.getters.getSearchWord
+      return this.$store.state.menuItems.filter((item) => {
+        return (item.title.toLowerCase().match(word) || item.category.toLowerCase().match(word))
+      })
     },
     categories() {
       return Array.from(new Set(this.$store.state.menuItems.map(x => x.category).filter(function(e){return e})))
