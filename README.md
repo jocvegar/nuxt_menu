@@ -1,22 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8121809d-dec9-44f3-80ab-6425ab3280c9/deploy-status)](https://app.netlify.com/sites/restaurante-siu/deploys)
+
 # nuxt_menu
 
 > Siu Traditional Chinese Cuisine
-
-## Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
