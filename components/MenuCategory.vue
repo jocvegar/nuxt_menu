@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="items.length > 0">
         <h3>{{ category | capitalize }}</h3>
         <div v-for="item in items" :key="item.slug">
             <h5>{{item.title}}</h5>

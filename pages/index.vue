@@ -34,9 +34,8 @@ export default {
     filteredMenuItems() {
       let word = this.$store.getters.getSearchWord
       return this.$store.state.menuItems.filter((item) => {
-        return (item.title.toLowerCase().match(word))
-        console.log(item.title.toLowerCase().match(word))
-        // return (item.title.toLowerCase().includes(word) || item.category.toLowerCase().match(word))
+        // return (item.title.toLowerCase().match(word))
+        return (item.title.toLowerCase().includes(word) || item.category.toLowerCase().match(word))
       })
     },
     categories() {

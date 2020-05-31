@@ -40,7 +40,7 @@ export default {
     // },
     methods: {
         search(e) {
-            let searchTerm = this.$store.dispatch('setSearchWord', event.target.value.trim())
+            let searchTerm = this.$store.dispatch('setSearchWord', event.target.value.toLowerCase().trim())
             // this.$store.dispatch('filterMenuItems', searchTerm)
         }
     }
@@ -52,16 +52,15 @@ export default {
     font-size: 24px;
     img {
         height: 35px;
-        /* put value of image height as your need */
         float: left;
         margin-right: 7px;
     }
 }
 
 @media (max-width: 767px) {  
- #search {
-     width: 9rem;
- }
+    #search {
+        width: 9rem;
+    }
 }
 
 </style>
