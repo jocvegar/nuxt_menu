@@ -33,4 +33,7 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+body {
+  background-color:rgb(250, 250, 250);
+}
 </style>

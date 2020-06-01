@@ -55,7 +55,7 @@ export default {
   pwa: {
     manifest: {
       name: 'Restaurante Siu',
-      short_name: 'Siu'
+      short_name: 'Siu',
     }
   },
   /*
