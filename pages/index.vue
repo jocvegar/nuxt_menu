@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <slider v-if="true"/>
     <menu-category 
       v-for="category in categories" 
       :key="category" 
@@ -10,10 +11,12 @@
 
 <script>
 import MenuCategory from '~/components/MenuCategory.vue'
+import Slider from '~/components/Slider.vue'
 
 export default {
   components: {
-    MenuCategory
+    MenuCategory,
+    Slider
   },
   head() {
     return {
