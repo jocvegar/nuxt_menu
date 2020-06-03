@@ -1,0 +1,14 @@
+{
+  "title": "Sopa Wonton",
+  "opciones": [
+    {
+      "tamano": "Normal",
+      "precio": "100"
+    },
+    {
+      "tamano": "Familiar",
+      "precio": "190"
+    }
+  ],
+  "category": "sopas"
+}
