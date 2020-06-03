@@ -27,13 +27,21 @@
                     <b-form-input 
                         id="search" 
                         placeholder="Busqueda"
+                        v-model="userInput"
                         v-on:input="search"
                         autofocus>
                     </b-form-input>
                     <b-input-group-append>
-                        <b-button variant="light" @click="cancelSearch">
-                            <i class="fas fa-times text-danger"></i>
-                        </b-button>
+                        
+                        <b-button-group>
+                            <b-button variant="light" @click="cleanSearch">
+                                <span class="text-muted">limpiar</span>
+                            </b-button>
+                            <b-button variant="light" @click="cancelSearch">
+                                <i class="fas fa-times text-danger"></i>
+                            </b-button>
+                        </b-button-group> 
+
                     </b-input-group-append>
                 </b-input-group>
             </b-col>   
@@ -50,7 +58,8 @@ export default {
     // },
     data() {
         return {
-            searching: false
+            searching: false,
+            userInput: ""
         }
     },
     methods: {
@@ -58,10 +67,14 @@ export default {
             let searchTerm = this.$store.dispatch('setSearchWord', event.target.value.toLowerCase().trim())
             // this.$store.dispatch('filterMenuItems', searchTerm)
         },
-        cancelSearch() {
+        cleanSearch() {
+            this.userInput = ""
             this.$store.dispatch('setSearchWord', "")
+        },
+        cancelSearch() {
+            this.cleanSearch()
             this.searching = false
-        }
+        },
     }
 }
 </script>

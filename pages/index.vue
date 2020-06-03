@@ -1,6 +1,6 @@
 <template>
   <div>
-    <slider v-if="true"/>
+    <slider v-if="getSearchWord.length == 0"/>
     <div class="container">  
     <menu-category 
       v-for="category in categories" 
@@ -44,7 +44,10 @@ export default {
     },
     categories() {
       return Array.from(new Set(this.$store.state.menuItems.map(x => x.category).filter(function(e){return e})))
-    }
+    },
+    getSearchWord() {
+      return this.$store.getters.getSearchWord
+    },
   },
 }
 </script>
