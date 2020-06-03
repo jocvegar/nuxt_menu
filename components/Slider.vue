@@ -1,12 +1,12 @@
 <template>
-    <div class="my-4">
-        <vueper-slides class="no-shadow" bullets-outside transition-speed="250" autoplay>
+    <div class="mb-2">
+        <vueper-slides autoplay :breakpoints="breakpoints">
             <vueper-slide
-            v-for="(slide, i) in slides"
-            :key="slide.id"
-            :title="slide.title"
-            :content="slide.content"
-            :style="'background-color: ' + ['#ff6ec7', '#42b983', '#ff5252'][i % 3]" />
+                v-for="(slide) in slides"
+                :key="slide.id"
+                :title="slide.title"
+                :content="slide.content"
+                :image="slide.imgUrl"/>
         </vueper-slides>
     </div>
 </template>
@@ -19,32 +19,36 @@ export default {
     components: { VueperSlides, VueperSlide },
     data() {
         return {
-            pauseOnHover: true,
-            autoPlaying: true,
-            internalAutoPlaying: true,
+            breakpoints: {
+                1200: {
+                    
+                },
+                900: {
+                    
+                },
+                600: {
+                    fixedHeight: '300px',
+                    arrows: false,
+                },
+                1100: {
+                    
+                }
+            },
             slides: [
                 {
                     id: 'slide-1',
-                    title: 'Slide <b style="font-size: 1.3em;color: yellow">#1</b>',
-                    content: 'Slide title can be HTML.<br>And so does the slide content, <span style="font-size: 1.2em;color: yellow">why not?</span>'
+                    title: '<b style="font-size: 2rem;color: white">Restaurante Siu</b>',
+                    content: '<b style="font-size: 1.5rem;color: white">Servicio A Domicilio<br><span style="font-size: 1.25rem;color: white">2237-9868 || 3170-9868 </span></b>',
+                    imgUrl: require('~/assets/images/1.jpg')
                 },
                 {
                     id: 'slide-2',
-                    title: 'Slide <b style="font-size: 1.3em;color: blue">#2</b>',
-                    content: 'Slide title can be HTML.<br>And so does the slide content, <span style="font-size: 1.2em;color: yellow">why not?</span>'
-                },
-                {
-                    id: 'slide-3',
-                    title: 'Slide <b style="font-size: 1.3em;color: green">#3</b>',
-                    content: 'Slide title can be HTML.<br>And so does the slide content, <span style="font-size: 1.2em;color: yellow">why not?</span>'
+                    title: '<b style="font-size: 2rem;color: white">Restaurante Siu</b>',
+                    content: '<b style="font-size: 1.5rem;color: white">Servicio A Domicilio<br><span style="font-size: 1.25rem;color: white">2237-9868 || 3170-9868 </span></b>',
+                    imgUrl: require('~/assets/images/2.jpg')
                 },
             ]
         }
     },
 }
 </script>
-
-<style>
-
-
-</style>

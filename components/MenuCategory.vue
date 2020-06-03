@@ -4,14 +4,12 @@
         <b-container>
             <b-row>
             <div class="col-12 col-sm-6 py-2" v-for="item in items" :key="item.slug">
-                <b-card :title="item.title">
+                <h5><ins>{{item.title}}</ins></h5>
                     <b-row>
                         <div class="col-12 col-sm-6" v-for="(opcion, idx) in item.opciones" :key="idx">
-                            <b-card-text>
-                                <small>
-                                    <strong>{{opcion.tamano}}</strong>...{{opcion.precio}} lps
-                                </small>
-                            </b-card-text>
+                            <p>
+                                <strong>{{opcion.tamano}}</strong>...{{opcion.precio}} lps
+                            </p>
                         </div>       
                     </b-row>
                 </b-card>

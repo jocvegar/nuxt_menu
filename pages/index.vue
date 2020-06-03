@@ -1,12 +1,13 @@
 <template>
-  <div class="container">
+  <div>
     <slider v-if="true"/>
+    <div class="container">  
     <menu-category 
       v-for="category in categories" 
       :key="category" 
       :category="category"
       :menuItems="filteredMenuItems"/>
-  </div>  
+  </div> </div> 
 </template>
 
 <script>
