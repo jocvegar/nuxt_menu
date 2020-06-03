@@ -1,0 +1,14 @@
+{
+  "title": "Tallarín de Arroz (Cerdo, Pollo, Res y Camarón)",
+  "opciones": [
+    {
+      "tamano": "Regular",
+      "precio": "200"
+    },
+    {
+      "tamano": "Familiar",
+      "precio": "290"
+    }
+  ],
+  "category": "tallarin_de_arroz"
+}
