@@ -1,0 +1,22 @@
+{
+  "title": "Arroz (Pollo, Cerdo y Mortadela)",
+  "opciones": [
+    {
+      "tamano": "Pequeño",
+      "precio": "60"
+    },
+    {
+      "tamano": "Mediano",
+      "precio": "100"
+    },
+    {
+      "tamano": "Regular",
+      "precio": "120"
+    },
+    {
+      "tamano": "Familiar",
+      "precio": "190"
+    }
+  ],
+  "category": "arroz"
+}
