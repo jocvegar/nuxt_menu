@@ -1,0 +1,14 @@
+{
+  "title": "Arroz (solo Camarón)",
+  "opciones": [
+    {
+      "tamano": "Regular",
+      "precio": "150"
+    },
+    {
+      "tamano": "Familiar",
+      "precio": "220"
+    }
+  ],
+  "category": "arroz"
+}
