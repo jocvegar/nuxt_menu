@@ -1,0 +1,14 @@
+{
+  "title": "Sopa de Pollo Con Vegetales",
+  "opciones": [
+    {
+      "tamano": "Normal",
+      "precio": "120"
+    },
+    {
+      "tamano": "Familiar",
+      "precio": "200"
+    }
+  ],
+  "category": "sopas"
+}
