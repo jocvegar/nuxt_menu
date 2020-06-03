@@ -43,7 +43,8 @@ export default {
       })
     },
     categories() {
-      return Array.from(new Set(this.$store.state.menuItems.map(x => x.category).filter(function(e){return e})))
+      // return Array.from(new Set(this.$store.state.menuItems.map(x => x.category).filter(function(e){return e})))
+      return ["entradas", "sopas", "arroz", "tallarin_de_arroz", "chop_suey", "chaumin", "pollo", "cerdo", "res", "camaron"]
     },
     getSearchWord() {
       return this.$store.getters.getSearchWord

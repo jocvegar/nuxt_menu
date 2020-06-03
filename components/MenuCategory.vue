@@ -38,7 +38,10 @@ export default {
     filters: {
         capitalize: function(value) {
             if (!value) return
-            return value.toString().charAt(0).toUpperCase() + value.slice(1)
+            return value.split("_").map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(" ")
+
+
+
         }
     }    
 }
