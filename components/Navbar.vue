@@ -9,7 +9,7 @@
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
                  <b-button-group>
-                    <b-button href="tel:9500-9542" pill variant="light mr-2">
+                    <b-button href="tel:31709868" pill variant="light mr-2">
                         <i class="search_icon fas fa-phone"></i>
                     </b-button>
                     <b-button pill @click="searching = true" variant="light">
