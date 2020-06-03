@@ -1,0 +1,14 @@
+{
+  "title": "Arroz (Pollo, Cerdo, Res y Camarón)",
+  "opciones": [
+    {
+      "tamano": "Regular",
+      "precio": "180"
+    },
+    {
+      "tamano": "Familiar",
+      "precio": "250"
+    }
+  ],
+  "category": "arroz"
+}
