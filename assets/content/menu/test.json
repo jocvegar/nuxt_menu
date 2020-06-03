@@ -4,11 +4,11 @@
   "opciones": [
     {
       "tamano": "Regular",
-      "precio": "150"
+      "precio": "100"
     },
     {
       "tamano": "Familiar",
-      "precio": "250"
+      "precio": "190"
     }
   ]
 }
